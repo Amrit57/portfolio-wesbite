@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
+import { FaGithubSquare, FaLink } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -12,6 +13,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  link,
+  code,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -36,6 +39,24 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-start gap-4 my-4 text-lg font-medium">
+            <a
+              className="bg-gray-100  py-2 px-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-lg focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              href={code}
+              target="_blank"
+              title="View Code"
+            >
+              <FaGithubSquare />
+            </a>
+            <a
+              className="bg-gray-100  py-2 px-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-lg focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+              href={link}
+              target="_blank"
+              title="Visit Website"
+            >
+              <FaLink />
+            </a>
+          </div>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
