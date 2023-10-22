@@ -24,10 +24,6 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
     name: "Contact",
     hash: "#contact",
   },
@@ -62,25 +58,32 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "CV Builder",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["React", "Vite.js", "CSS", "Material Design Icon", "Netlify"],
     imageUrl: corpcommentImg,
+    link: "https://delicate-choux-6f87e5.netlify.app/",
+    code: "https://github.com/Amrit57/CV-Application"
   },
   {
-    title: "rmtDev",
+    title: "Weather App",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["HTML", "JavaScript", "CSS", "Weather Api", "Github Pages"],
     imageUrl: rmtdevImg,
+    link: "https://amrit57.github.io/Weather-App/",
+    code: "https://github.com/Amrit57/Weather-App"
   },
   {
-    title: "Word Analytics",
+    title: "TextUtils",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "Bootsrap 5", "Netlify"],
     imageUrl: wordanalyticsImg,
+    link: "https://textutlis-fb8214.netlify.app/",
+    code: "https://github.com/Amrit57/TextUtlis-App"
+
   },
 ] as const;
 
@@ -88,20 +91,12 @@ export const skillsData = [
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
-  "Next.js",
-  "Node.js",
   "Git",
+  "Github",
+  "Figma",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
+  "Bootsrap 5",
   "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
 ] as const;
