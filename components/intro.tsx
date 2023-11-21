@@ -33,7 +33,7 @@ export default function Intro() {
           >
             <Image
               src={ProfilePic}
-              alt="Ricardo portrait"
+              alt="Amrit Potrait"
               width="192"
               height="192"
               quality="95"

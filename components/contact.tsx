@@ -1,15 +1,21 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import { FaGithubSquare } from "react-icons/fa";
+import { BsLinkedin, BsFacebook } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [pending, setPending] = useState(false);
+  const handleClick = () => {
+    setPending(true);
+    setTimeout(() => {
+      setPending(false);
+    }, 3000);
+  };
 
   return (
     <motion.section
@@ -36,41 +42,35 @@ export default function Contact() {
         <a className="underline" href="mailto:fenpadorje7@gmail.com">
           fenpadorje7@gmail.com
         </a>{" "}
-        or through this form.
+        or through my socials.
       </p>
-
-      <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
+      <div
+        className=" m-4 flex justify-center items-center flex-wrap gap-5 
+      "
       >
-        <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="senderEmail"
-          type="email"
-          required
-          maxLength={500}
-          id="emailInput"
-          placeholder="Your email"
-        />
-        <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="message"
-          placeholder="Your message"
-          required
-          id="textArea"
-          maxLength={5000}
-        />
-        <SubmitBtn />
-      </form>
+        <a
+          className="bg-gray-100 w-[170px] p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-md focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.linkedin.com/in/amrit-lama-syangbo-ab50a5266/"
+          target="_blank"
+        >
+          <BsLinkedin /> LinkedIn
+        </a>
+
+        <a
+          className="bg-gray-100 w-[170px] p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-md focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://github.com/Amrit57"
+          target="_blank"
+        >
+          <FaGithubSquare /> Github
+        </a>
+        <a
+          className="bg-gray-100 w-[170px] p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-md focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.facebook.com/amrit.tamang.9634340"
+          target="_blank"
+        >
+          <BsFacebook /> Facebook
+        </a>
+      </div>
     </motion.section>
   );
 }
