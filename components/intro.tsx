@@ -71,7 +71,8 @@ export default function Intro() {
           user-friendly, visually appealing websites.
         </span>{" "}
         My perosnal preference is
-        <span className="underline"> Reactjs</span>.
+        <span className="underline"> Nextjs</span>. But I love learning new
+        technologies and tools as per company's requirements.
       </motion.h1>
 
       <motion.div
@@ -93,16 +94,14 @@ export default function Intro() {
           Contact me here
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="./CV of Amrit Lama Syangbo.pdf"
+          href="./Amrit Lama Resume(SE).pdf"
           download
         >
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/amrit-lama-syangbo-ab50a5266/"
@@ -110,7 +109,6 @@ export default function Intro() {
         >
           <BsLinkedin />
         </a>
-
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/Amrit57"

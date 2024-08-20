@@ -3,8 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import CV from "@/public/CV Builder.png";
-import TextUtils from "@/public/TextUtils.png";
-import WeatherApp from "@/public/Weather App.png";
+import TextUtils from "@/public/hisi.png";
+import WeatherApp from "@/public/vugol.png";
 
 export const links = [
   {
@@ -58,6 +58,31 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Vugol.me",
+    description:
+      "This is website where user's can conduct/participate, e.t.c on  surveys and subject/articles to help user/company get the data for their bussiness growth and also explore recent gloabl news. There are lots of other features you can explore by visiting the website. Note: Project Done while working in OSON (Outright Solution Nepal)  ",
+    tags: [
+      "Next.js",
+      "Shadcn",
+      "Tailwind Css",
+      "React-animation",
+      "Php",
+      "laravel",
+    ],
+    imageUrl: WeatherApp,
+    link: "https://www.vugol.me/",
+    code: "https://github.com/bigroski/vumiFront",
+  },
+  {
+    title: "Hisi-Cosmetics",
+    description:
+      "A full-stack Ecommerce website where different cosmetics products can be purchased  based on  brands and many filteration feature along with payment services and many more. Note: Front-end Developer in Freelance project ",
+    tags: ["Next.js", "Tailwind Css", "Shadcn", "Node.js", "Javascript"],
+    imageUrl: TextUtils,
+    link: "https://hisicosmo-front.vercel.app/",
+    code: "https://github.com/meanish/hisicosmo-front",
+  },
+  {
     title: "CV Builder",
     description:
       "This website helps you build your CV, Load exmaple resume and several other features. ",
@@ -66,24 +91,6 @@ export const projectsData = [
     link: "https://delicate-choux-6f87e5.netlify.app/",
     code: "https://github.com/Amrit57/CV-Application",
   },
-  {
-    title: "Weather App",
-    description:
-      "This is a weather App which shows the weather of any given city in the world by handling Weather Api",
-    tags: ["HTML", "JavaScript", "CSS", "Weather Api", "Github Pages"],
-    imageUrl: WeatherApp,
-    link: "https://amrit57.github.io/Weather-App/",
-    code: "https://github.com/Amrit57/Weather-App",
-  },
-  {
-    title: "TextUtils",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count, alert feedbacks, preview section and many more features.",
-    tags: ["React", "Bootsrap 5", "Netlify"],
-    imageUrl: TextUtils,
-    link: "https://textutlis-fb8214.netlify.app/",
-    code: "https://github.com/Amrit57/TextUtlis-App",
-  },
 ] as const;
 
 export const skillsData = [
@@ -91,11 +98,15 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "React",
+  "Redux",
+  "Next.js",
+  "Shadcn",
   "Git",
   "Github",
-  "Figma",
-  "Tailwind",
+  "Tailwind Css",
   "Bootsrap 5",
-  "Redux",
+  "Figma",
+  "Ck Editor",
+  "Npm",
   "Framer Motion",
 ] as const;

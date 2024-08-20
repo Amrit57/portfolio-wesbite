@@ -34,10 +34,14 @@ export default function About() {
         is
         <span className="font-medium">
           {" "}
-          HTML, CSS, Javascript, Bootsrap and React
+          HTML, CSS, Javascript, Next.js, Bootsrap, Tailwind and React
         </span>
-        . I am also familiar with Figma and Tailwind CSS. I am always looking to
-        learn new technologies. I am currently looking for a
+        . I am also familiar with Figma and many front-end technologies and
+        tools necessary for building very smooth and astonishing user interface
+        while also keeping the user experience on mind. I'm always willing to
+        learn new technologies and tech stacks based on the project or company
+        requirements. I am always looking to learn new technologies. I am
+        currently looking for a
         <span className="font-medium"> full-time position</span> as a software
         developer.
       </p>
@@ -48,8 +52,11 @@ export default function About() {
         Tech and updates in software field . I also enjoy
         <span className="font-medium"> learning new things</span>. I am
         currently learning
-        <span className="font-medium"> Typescript and Framer-Motion</span>. I
-        also prefer playing football and boxing.
+        <span className="font-medium">
+          {" "}
+          Typescript, Node.js and Backend technologies
+        </span>
+        . I also prefer playing football and boxing.
       </p>
     </motion.section>
   );
