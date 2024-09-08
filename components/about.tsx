@@ -38,7 +38,7 @@ export default function About() {
         </span>
         . I am also familiar with Figma and many front-end technologies and
         tools necessary for building very smooth and astonishing user interface
-        while also keeping the user experience on mind. I'm always willing to
+        while also keeping the user experience on mind. I&apos;m always willing to
         learn new technologies and tech stacks based on the project or company
         requirements. I am always looking to learn new technologies. I am
         currently looking for a

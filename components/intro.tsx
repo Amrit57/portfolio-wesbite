@@ -72,7 +72,7 @@ export default function Intro() {
         </span>{" "}
         My perosnal preference is
         <span className="underline"> Nextjs</span>. But I love learning new
-        technologies and tools as per company's requirements.
+        technologies and tools as per company&apos;s requirements.
       </motion.h1>
 
       <motion.div

@@ -71,16 +71,16 @@ export const projectsData = [
     ],
     imageUrl: WeatherApp,
     link: "https://www.vugol.me/",
-    code: "https://github.com/bigroski/vumiFront",
+    code: "https://github.com/Amrit57",
   },
   {
     title: "Hisi-Cosmetics",
     description:
       "A full-stack Ecommerce website where different cosmetics products can be purchased  based on  brands and many filteration feature along with payment services and many more. Note: Front-end Developer in Freelance project ",
-    tags: ["Next.js", "Tailwind Css", "Shadcn", "Node.js", "Javascript"],
+    tags: ["Next.js", "Tailwind Css", "Shadcn", "Node.js", "MongoDB"],
     imageUrl: TextUtils,
     link: "https://hisicosmo-front.vercel.app/",
-    code: "https://github.com/meanish/hisicosmo-front",
+    code: "https://github.com/Amrit57",
   },
   {
     title: "CV Builder",
